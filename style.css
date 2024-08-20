@@ -19,10 +19,13 @@ a {
 button {
     background-color: #2882f6;
     color: white;
-    border-radius: 6px;
-    padding: 8px 16px;
+    border-radius: 12px;
+    padding: 8px 25px;
     font-size: 16px;
+    font-weight: bold;
 }
+
+
 .header,
 .footer {
     display: flex;
@@ -41,8 +44,7 @@ button {
 }
 
 .header-bar,
-.header-hero,
-.information-content {
+.header-hero {
     display: flex;
     align-items: center;
 }
@@ -89,6 +91,10 @@ margin-right: auto;
     max-height: 200px;
 }
 
+.subtext {
+    max-width: 570px;
+}
+
 .image-box {
     background-color: gray;
     height: 240px;
@@ -97,6 +103,14 @@ margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+}
+
+.header-image {
+    height: 240px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .information {
@@ -106,19 +120,50 @@ margin-right: auto;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding: 25px 300px;
+    padding: 25px 300px 75px 300px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 .information-header {
     color:#1f2937;
     font-size: 36px;
     font-weight: 950;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: max-content;
+    flex: 0 0 auto;
 }
 
-.img {
-    width: 50px;
-    height: 50px;
-    border-color: black;
+.information-content {
+    display: flex;
+    gap: 25px;
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+    border: #2882f6;
+    border-radius: 12px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.icon-text {
+    width: 150px;
+    flex: 0 0 auto;
+    text-align: center;
 }
 
 .quote {
